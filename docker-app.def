@@ -2,8 +2,8 @@
 
 APP=( "web" )
 web=(
-     "java -Xms1024m -Xmx2048m -DAPP_NAME=ribbon -jar -Dlogging.path=/root/logs/ribbon/ /root/lib/ribbon-0.0.1-SNAPSHOT.jar" # start command
-     "APP_NAME=ribbon"       # process key
+     "java -Xms1024m -Xmx2048m -DAPP_NAME=provider -jar -Dlogging.path=/root/logs/ribbon/ /root/lib/client-0.0.1-SNAPSHOT.jar" # start command
+     "APP_NAME=provider"       # process key
      "echo OK"    # liveness check command
      "OK"         # liveness successful code
      "echo OK"    # readiness check command
