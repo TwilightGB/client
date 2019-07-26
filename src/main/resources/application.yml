@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.250.86:8801/eureka/
+      defaultZone: http://localhost:8801/eureka/
   instance:
     prefer-ip-address: true
 
@@ -13,9 +13,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.250.85:3306/ware_house?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/ware_house?useUnicode=true&characterEncoding=utf8
     username: root
-    password: admin123$%^
+    password: 123456
     initialSize: 1
     minIdle: 3
     maxActive: 20
