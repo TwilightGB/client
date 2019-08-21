@@ -1,0 +1,21 @@
+#JavaNCSS工具检查路径例外配置
+#格式说明：支持正则表达式，每一行表示一个路径
+
+#EXCLUDE节点配置例外规则,INCLUDE节点配置需检查的文件列表
+#EXCLUDE节点和INCLUDE节点不能同时存在于配置文件中，请根据实际需要选取一种方式配置
+#若同时配置了EXCLUDE和INCLUDE节点，只取EXCLUDE节点内容生效
+
+#INCLUDE/EXCLUDE路径说明：请基于流程节点属性配置表中的code.path属性值来配置代码检查路径，一般基于svn上的**/web/java，请根据实际配置调整
+
+# 484251 javancss函数级例外的支持 
+# 功能扩展：
+# 1、添加function级过滤
+# 2、添加object级过滤
+# 3、添加package级过滤
+# 使用说明：例外配置内容增加三部分：[package]、[object]、[function]
+# 过滤结果说明：
+# 1、低层过滤不会影响高层统计，层次function < object < package
+#     例：如上面com.ztesoft.zsmart.javancss.filter.BaseFilter中三个方都被过滤掉了。但是package和object的统计function个数以及其他都不会发生变化。
+# 2、高层过滤，低层将全部过滤。
+#     例：如上面javancss包被过滤，那么其包下所有的object和function统计都会移至统计结果filter标签中。
+# 484251 javancss函数级例外的支持 END

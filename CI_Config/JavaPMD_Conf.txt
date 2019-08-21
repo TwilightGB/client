@@ -1,0 +1,16 @@
+﻿#JavaPMD工具检查路径例外配置
+#格式说明：支持正则表达式，每一行表示一个路径，为了和程序逻辑统一，目前只支持配置排除模式
+ 
+#EXCLUDE节点配置例外规则
+ 
+#路径说明：pmd不支持在代码路径上续写排除路径，因此例外目录都需要正则表达式开头，如.*/code/bss/ms/.*，请根据实际配置调整
+ 
+#Sample 1: ZSmart_CCB_V7.1_JavaPMD_Conf.txt
+#[EXCLUDE]
+#.*/web/customer_eshop/.*
+ 
+#Sample 2: ZSmart_CCB_V7.3_JavaPMD_Conf.txt
+#[EXCLUDE]
+#.*/code/bss/ms/.*
+#.*/web/.*_demo/.*
+
