@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+
+<!--</head>-->
+<body class="gray-bg">
+	<div class="wrapper wrapper-content">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-content">
+						<div class="col-sm-12">
+							<h4> </h4>
+						</div>
+						<form class="form-horizontal m-t" id="signupForm">
+							<div class="form-group">
+								<label class="col-sm-2 control-label">商品ID：</label>
+								<div class="col-sm-3">
+									<input id="productId" name="productId" class="form-control" type="text">
+								</div>
+								<label class="col-sm-2 control-label">仓库ID：</label>
+								<div class="col-sm-3">
+									<input id="wId" name="wId" class="form-control"
+										type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">当前商品数量：</label>
+								<div class="col-sm-8">
+									<input id="currentCnt" name="currentCnt" class="form-control" type="text">
+								</div>
+							</div>
+
+							<div class="text-right form-group">
+								<button class="btn btn-primary waves-effect waves-light" onclick="save()">保存</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:include="include::footer"></div>
+	<script type="text/javascript" src="/js/appjs/warehouse/add.js">
+		
+	</script>
+</body>
+</html>
