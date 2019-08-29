@@ -117,13 +117,13 @@
         </dependencies>
     </dependencyManagement>
 
-    <distributionManagement>
-        <repository>
-            <id>nexus-releases</id>
-            <name>nexus-releases</name>
-            <url>http://192.168.250.86:8081/repository/telnet-repository/</url>
-        </repository>
-    </distributionManagement>
+    <!--<distributionManagement>-->
+        <!--<repository>-->
+            <!--<id>nexus-releases</id>-->
+            <!--<name>nexus-releases</name>-->
+            <!--<url>http://192.168.250.86:8081/repository/telnet-repository/</url>-->
+        <!--</repository>-->
+    <!--</distributionManagement>-->
     <build>
         <plugins>
             <plugin>
